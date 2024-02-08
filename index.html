@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Locomotive Scroll</title>
+    <link rel="stylesheet" href="./src/css/locomotive-scroll.min.css" />
+    <link rel="stylesheet" href="./src/css/destyle.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav__wrapper">
+        <div class="nav__item">
+          <h1>the Classy</h1>
+        </div>
+        <div class="nav__item">
+          <ul class="nav__list">
+            <li id="hero">Hero</li>
+            <li id="gallery">Gallery</li>
+            <li id="footer">Contact</li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="app" data-scroll-container>
+      <section class="hero" data-scroll-section>
+        <div class="hero__wrapper">
+          <div class="hero__title" data-scroll data-scroll-call="hero">
+            <h2>Classy</h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery" data-scroll-section>
+        <div class="gallery__wrapper">
+          <figure
+            class="gallery__figure"
+            data-scroll
+            data-scroll-speed="2"
+            data-scroll-direction="horizontal"
+          >
+            <img src="./src/images/image01.jpg" alt="" class="gallery__image" />
+          </figure>
+
+          <figure
+            class="gallery__figure"
+            data-scroll
+            data-scroll-speed="2"
+            data-scroll-direction="horizontal"
+          >
+            <img src="./src/images/image02.jpg" alt="" class="gallery__image" />
+          </figure>
+        </div>
+      </section>
+
+      <section class="marquee" data-scroll-section>
+        <div
+          class="marquee__text"
+          data-scroll
+          data-scroll-speed="8"
+          data-scroll-direction="horizontal"
+        >
+          <h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+            asperiores maiores facere, temporibus tenetur vitae facilis earum?
+            Nostrum facilis, sed magnam, rerum obcaecati adipisci voluptatem,
+            optio officiis consequatur tempore ratione.
+          </h1>
+        </div>
+        <div
+          class="marquee__text"
+          data-scroll
+          data-scroll-speed="-8"
+          data-scroll-direction="horizontal"
+        >
+          <h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+            asperiores maiores facere, temporibus tenetur vitae facilis earum?
+            Nostrum facilis, sed magnam, rerum obcaecati adipisci voluptatem,
+            optio officiis consequatur tempore ratione.
+          </h1>
+        </div>
+      </section>
+
+      <section class="footer" data-scroll-section>
+        <div
+          class="footer__wrapper"
+          data-scroll
+          data-scroll-speed="-2"
+          data-scroll-call="footer"
+        >
+          <div class="footer__row">
+            <div class="footer__row-col">
+              <ul class="nav__list">
+                <li>Contact Us</li>
+              </ul>
+            </div>
+
+            <div class="footer__row-col">
+              <ul class="nav__list">
+                <li>Hero</li>
+                <li>Gallery</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+
+            <div class="footer__row-col">
+              <ul class="nav__list">
+                <li>Brand kit</li>
+                <li>Drop</li>
+              </ul>
+            </div>
+            <div class="footer__row-col">
+              <ul class="nav__list">
+                <li>Instagram</li>
+                <li>Twitter</li>
+                <li>YouTube</li>
+                <li>TikTok</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer__row">
+            <div class="footer__title">
+              <h1>Classy</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Locomotive Scroll -->
+    <script src="./src/js/lib/locomotive-scroll.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>
