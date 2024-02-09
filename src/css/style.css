@@ -80,7 +80,7 @@ h4 {
 }
 
 .hero__title h1 {
-  font-size: 40rem;
+  font-size: clamp(8rem, 20vw, 40rem);
   text-transform: uppercase;
 
   &::before {
